@@ -20,5 +20,5 @@ from page import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.events, name = 'events'),
+    path('events/', views.events, name = 'events'),
 ]

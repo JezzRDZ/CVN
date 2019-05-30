@@ -1,1 +1,11 @@
-<h1>klvbb</h1>
+{% extends './base.html' %}
+{% block title %}Eventos{% endblock %}
+{% block content %}
+{% for events in events %}
+	<div class="container">
+		<h3>{{ events.title }}</h3>
+		<p>{{ events.text|linebreaksbr }}</p>
+		<p>{{ events.published_date }}</p>
+	</div>
+{% endfor %}
+{% endblock %}
