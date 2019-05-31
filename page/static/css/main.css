@@ -1,5 +1,7 @@
 body {
   height: 100%;
+  padding: 0;
+  margin: 0;
   overflow-x: hidden;
 }
 
@@ -62,6 +64,42 @@ body {
           #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:hover,
           #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus:hover {
             color: #9c0c0f; } }
+
+header {
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 56px);
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed; }
+  header h1 {
+    font-size: 2rem; }
+  header p {
+    font-weight: 300; }
+  @media (min-width: 768px) {
+    header p {
+      font-size: 1.15rem; } }
+  @media (min-width: 992px) {
+    header {
+      height: 100vh;
+      min-height: 650px;
+      padding-top: 0;
+      padding-bottom: 0; }
+      header h1 {
+        font-size: 3rem; } }
+  @media (min-width: 1200px) {
+    header h1 {
+      font-size: 4rem; } }
+
+header#Inicio {
+  background-image: url(https://images.unsplash.com/photo-1445445290350-18a3b86e0b5a?auto=format&fit=crop&w=966&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
+}
+
+header#Eventos {
+  background-image: url(https://images.unsplash.com/photo-1442504028989-ab58b5f29a4a?auto=format&fit=crop&w=1050&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
+}
 
 .footer-bs {
   width: 100%;

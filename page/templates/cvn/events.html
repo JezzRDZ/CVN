@@ -1,5 +1,5 @@
 {% extends './base.html' %}
-{% block title %}Eventos{% endblock %}
+{% block title %}{% block title_header_id %}{% block title_header %}Eventos{% endblock %}{% endblock %}{% endblock %}
 {% block content %}
 {% for events in events %}
 <div class="container">
