@@ -1,0 +1,11 @@
+Nombre:
+{{ name }}
+
+Teléfono:
+{{ phone }}
+
+E-mail:
+{{ mail }}
+
+Contenido:
+{{ content|safe|striptags }}

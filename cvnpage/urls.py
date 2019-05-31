@@ -21,5 +21,6 @@ from page import views
 urlpatterns = [
 	path('', include('page.urls')),
     path('admin/', admin.site.urls),
-    path('events/', views.events, name = 'events'),
+    path('eventos/', views.events, name = 'events'),
+    path('contacto/', views.contact, name = 'contact'),
 ]
