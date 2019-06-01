@@ -1,11 +1,25 @@
 {% extends './base.html' %}
 {% block title %}{% block title_header_id %}{% block title_header %}Eventos{% endblock %}{% endblock %}{% endblock %}
 {% block content %}
-{% for events in events %}
 <div class="container">
-	<h3>{{ events.title }}</h3>
-	<p>{{ events.text|linebreaksbr }}</p>
-	<p>{{ events.date_event }}</p>
+	<div class="row">
+		{% for events in events %}
+		<div class="col">
+			<div class="card" id="card-hover" style="width: 18rem;">
+				<img class="card-img-top" src="..." alt="Card image cap">
+				<div class="card-body">
+		    		<h5 class="card-title">{{ events.title }}</h5>
+		    		<p class="card-text">{{ events.text|linebreaksbr }}</p>
+		    		<a href="#" class="btn btn-primary">Go somewhere</a>
+		  		</div>
+		  		<div class="card-footer text-muted">
+		  			<p>{{ events.date_event }}</p>
+		  		</div>
+			</div>
+			<h3></h3>
+			<p></p>
+		</div>
+		{% endfor %}	
+	</div>
 </div>
-{% endfor %}
 {% endblock %}

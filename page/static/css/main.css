@@ -94,15 +94,31 @@ header {
       font-size: 4rem; } }
 
 header#Inicio {
-  background-image: url(https://images.unsplash.com/photo-1445445290350-18a3b86e0b5a?auto=format&fit=crop&w=966&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D); }
+  background-image: url(https://images.unsplash.com/photo-1508829040592-72f179f8a73f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1510&q=80); }
 header#Eventos {
   background-image: url(https://images.unsplash.com/photo-1442504028989-ab58b5f29a4a?auto=format&fit=crop&w=1050&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D); }
 header#Contacto { 
   background-image: url(https://images.unsplash.com/photo-1558541966-ee7182e26d63?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1491&q=80); }
 
+.textos {display: none;}
+
+.text-faded {
+  color: rgba(255, 255, 255, 0.7); }
+
 #content {
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+#card-hover {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+}
+#card-hover:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.7);
 }
 
 .google-maps {
