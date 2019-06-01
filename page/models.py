@@ -1,5 +1,6 @@
 from django.db import models
 from django.utils import timezone
+from datetime import date
 
 # Create your models here.
 
@@ -7,6 +8,7 @@ class Event(models.Model):
 	author = models.ForeignKey('auth.User', on_delete = models.CASCADE)
 	title = models.CharField(max_length = 200)
 	text = models.TextField()
+	date_event = models.DateField(default = date.today, auto_now = False)
 	created_date = models.DateTimeField(default = timezone.now)
 	published_date = models.DateTimeField(blank = True, null = True)
 
