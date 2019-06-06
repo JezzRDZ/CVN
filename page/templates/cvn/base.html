@@ -4,9 +4,11 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>{% block title %}{% endblock %} | Comunidad Vida Nueva</title>
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'images/CVNO.ico' %}">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous"> 
-	<link rel="stylesheet" href="{% static 'css/main.css' %}">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/content.css' %}">
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
@@ -29,16 +31,7 @@
     <div class="container my-auto">
         <div class="row">
             <div class="col-lg-10 mx-auto">
-                <h1 class="text-uppercase"><strong>{% block title_header %}{% endblock %}</strong></h1>
-                <hr>
-            </div>
-            <div class="col-lg-8 mx-auto">
-                <div id="slider">
-                    <p class="textos text-faded">"Mas a todos los que le recibieron, a los que creen en su nombre, les dio potestad de ser hechos hijos de Dios"<br>S.Juan 1:12</p>
-                    <p class="textos text-faded">"Esto significa que todo el que pertenece a Cristo se ha convertido en una persona nueva. La vida antigua ha pasado; ¡una nueva vida ha comenzado!"<br>2 Corintios 5:17</p>
-                    <p class="textos text-faded">"Porque por gracia sois salvos por medio de la fe; y esto no de vosotros, pues es don de Dios; no por obras, para que nadie se glor&iacutee."<br>Efesios 2:8-9</p>
-                    <p class="textos text-faded">"Jes&uacutes le dijo: Yo soy el camino, y la verdad, y la vida; nadie viene al Padre, sino por m&iacute."<br>S.Juan 14:6</p>
-                </div>
+                <h1 class="text-uppercase" id="title_header"><strong>{% block title_header %}{% endblock %}</strong></h1>
             </div>
         </div>
     </div>

@@ -22,20 +22,6 @@ navbarCollapse();
 // Collapse the navbar when page is scrolled
 $(window).scroll(navbarCollapse);
 
-// Display texts on main page
-(function() {
-  var textos = $(".textos");
-  var textIndex = -1;
-  function showNext() {
-    ++textIndex;
-    textos.eq(textIndex % textos.length)
-    .fadeIn(2000)
-    .delay(6000)
-    .fadeOut(2000, showNext);
-  }
-  showNext();
-})();
-
 //Parallax on header
 /*$(document).scroll(function() {
   var st = $(this).scrollTop();

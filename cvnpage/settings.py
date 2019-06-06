@@ -25,7 +25,7 @@ SECRET_KEY = 'f6$djr1@gs8vqb&kjekx$3$o0lzf@rjz_xs*^y$qsw*4rva#uc'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -120,6 +120,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
 
 # Email settings
 # Using Gmal SMTP

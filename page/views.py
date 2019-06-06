@@ -12,9 +12,9 @@ def home(request):
 	return render(request, 'cvn/index.html', {})
 
 # Página Eventos
-# Publica los que tienen cumplen con la fecha de publicación y se ordenan por fecha de publicación.
+# Publica los que cumplen con la fecha de publicación y se ordenan por fecha de evento.
 def events(request):
-	events = Event.objects.filter(published_date__lte = timezone.now()).order_by('published_date')
+	events = Event.objects.filter(published_date__lte = timezone.now()).order_by('date_event')
 	return render(request, 'cvn/events.html', {'events': events})
 
 # Página Contacto
