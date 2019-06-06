@@ -58,4 +58,113 @@
 		</div>
 	</div>
 </section>
+<style type="text/css">
+.btn:link,
+.btn:visited{
+  text-decoration: none;
+  text-transform:uppercase;
+  position:relative;
+  top:0;
+  left:0;
+  padding:20px 40px;
+  border-radius:100px;
+  display:inline-block;
+  transition: all .5s;
+}
+.btn-white{
+  background:#fff;
+  color:#000;
+}
+.btn:hover{
+   box-shadow:0px 10px 10px rgba(0,0,0,0.2);
+   transform : translateY(-3px);
+}
+.btn:active{
+  box-shadow:0px 5px 10px rgba(0,0,0,0.2)
+  transform:translateY(-1px);
+}
+.btn-bottom-animation-1, .icon{
+  animation:comeFromBottom 3s ease-out .5s;
+}
+.btn::after{
+  content:"";
+  text-decoration: none;
+  text-transform:uppercase;
+  position:absolute;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  border-radius:100px;
+  display:inline-block;
+  z-index:-1;
+  transition: all .5s;
+}
+.btn-white::after {
+    background: #fff;
+}
+.btn-animation-1:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+@keyframes comeFromBottom{
+  0%{
+    opacity:0;
+    transform:translateY(40px);
+  } 
+  100%{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+.icon {
+	transition: all 0.3s ease;
+}
+.icon:hover {
+	-webkit-transform: scale(1.3);
+	-ms-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
+@media (max-width: 768px) {
+	.text1 h1 { 
+		font-size: 2rem;
+	}
+	.text1 {
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+	.parallax {
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+	.mvv {
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+}
+
+section {
+	padding: 7rem;
+}
+
+.text1 {
+	background-color: #9c0c0f;
+}
+
+.parallax {
+	background-image: url(https://images.unsplash.com/photo-1489851813165-bf319109acb9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80);
+	height: 500px;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+@media only screen and (max-device-width: 992px) {
+  	.parallax {
+    	background-attachment: scroll;
+    	height: 800px;
+  	}
+}
+</style>
 {% endblock %}
