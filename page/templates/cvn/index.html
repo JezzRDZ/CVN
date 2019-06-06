@@ -3,14 +3,26 @@
 {% block title_header %}Comunidad Vida Nueva{% endblock %}
 {% block content %}
 <section class="text1">
-	<div class="container text-center text-white">
+	<div class="text-center text-white">
 		<h1>Conoce a Jesús</h1>
 		<p><i>Hemos conocido profundamente el amor y la misericordia que solo Jesús nos puede dar. Queremos que tú también le conozcas.<br>Jesús no es religión. Jesús quiere ser tu mejor amigo.</i></p>
 	</div>	
 </section>
-<section class="section1">
+<section class="section1 parallax">
 	<div class="container text-white">
-		<p>ociuw</p>
+		<h2>Sé testigo del movimiento</h2>
+		<p>Conoce todas nuestras actividades y servicios.</p>
+		<br>
+		<div class="servicios row">
+			<span class="text-center col"><p><i class="icon fas fa-place-of-worship" style="font-size: 50px;"></i><br><i>Servicio oficial:<br>Domingos - 11 A.M.</i></p></span>
+			<span class="text-center col"><p><i class="icon fas fa-hand-holding-heart" style="font-size: 50px;"></i><br><i>Dar por Amor:<br>Segundo sábado del mes - 5 P.M.</i></p></span>
+			<span class="text-center col"><p><i class="icon fab fa-gripfire" style="font-size: 50px;"></i><br><i>CVN Young:<br>Sábados - 5 P.M.</i></p></span>
+			<span class="text-center col"><p><i class="icon fas fa-praying-hands" style="font-size: 50px;"></i><br><i>Oración:<br>Último sábado del mes - 8 P.M.</i></p></span>
+			<span class="text-center col"><p><i class="icon fas fa-bible" style="font-size: 50px;"></i><br><i>Estudio Bíblico:<br>Jueves - 7:30 P.M.</i></p></span>
+		</div>
+		<div class="text-center">
+			<a class="btn btn-white btn-animation-1" href="{% url 'events' %}">Eventos</a>
+		</div>
 	</div>
 </section>
 {% endblock %}
