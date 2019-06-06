@@ -65,7 +65,7 @@ body {
           #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus:hover {
             color: #9c0c0f; } }
 
-header.masthead {
+section.masthead {
   position: relative;
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
@@ -74,33 +74,33 @@ header.masthead {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
-  header.masthead h1 {
+  section.masthead h1 {
     font-size: 2rem; }
-  header.masthead p {
+  section.masthead p {
     font-weight: 300; }
   @media (min-width: 768px) {
-    header.masthead p {
+    section.masthead p {
       font-size: 1.15rem; } }
   @media (min-width: 992px) {
-    header.masthead {
+    section.masthead {
       height: 100vh;
       min-height: 650px;
       padding-top: 0;
       padding-bottom: 0; }
-      header.masthead h1 {
+      section.masthead h1 {
         font-size: 3rem; } }
   @media (min-width: 1200px) {
-    header.masthead h1 {
+    section.masthead h1 {
       font-size: 4rem; } }
 
-header.masthead#Inicio {
+section.masthead#Inicio {
   background-image: url(https://images.unsplash.com/photo-1508829040592-72f179f8a73f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1510&q=80); }
-header.masthead#Eventos {
+section.masthead#Eventos {
   background-image: url(https://images.unsplash.com/photo-1442504028989-ab58b5f29a4a?auto=format&fit=crop&w=1050&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D); }
-header.masthead#Contacto { 
+section.masthead#Contacto { 
   background-image: url(https://images.unsplash.com/photo-1558541966-ee7182e26d63?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1491&q=80); }
 
-header, section {
+section {
   margin: 0;
   padding: 1px;
 }
