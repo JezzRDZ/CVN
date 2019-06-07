@@ -105,3 +105,9 @@ section {
     	height: 500px;
   	}
 }
+@media only screen and (max-device-width: 420px) {
+  	.parallax {
+    	background-attachment: scroll;
+    	height: 800px;
+  	}
+}
