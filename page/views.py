@@ -4,6 +4,7 @@ from django.http import HttpResponse
 from django.utils import timezone
 from .models import Event
 from .forms import ContactForm
+from django.contrib import messages
 from django.core.mail import send_mail, BadHeaderError
 from django.template.loader import get_template
 
@@ -41,10 +42,10 @@ def contact(request):
 				send_mail(name, form_content, settings.EMAIL_HOST_USER, ['jez.rdz95@gmail.com'])
 			except BadHeaderError:
 				return HttpResponse('Invalid header found.')
-			return redirect('success')
+			messages.success(request, 'Hemos recibido su mensaje correctamente. Nos pondremos en contacto con usted lo más pronto posible.')
 	return render(request, 'cvn/contact.html', {'form': form_class})
 
 # Página Success
 # Se carga cuando el correo de contacto es mandado satisfactoriamente.
-def success(request):
-	return render(request, 'cvn/email_send.html', {})
+# def success(request):
+# 	return render(request, 'cvn/email_send.html', {})
